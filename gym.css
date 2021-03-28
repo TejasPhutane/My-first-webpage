@@ -1,0 +1,88 @@
+body{
+    height: 100%;
+    background-color: black;   
+}
+html{
+    height: 100%;
+}
+#box
+{
+    height: 100%;
+    width: 100%;
+    background-image: url("gym_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.inner_content
+{
+    height: 100%;
+    width: 100%;
+    display: table; 
+}
+.content{
+    display: table-cell;
+    height: 100%;
+    text-align:center;
+    vertical-align:middle;
+    position:relative;
+    z-index: 3;
+}
+.content h1{
+    color:rgb(231,202,35);
+    font-size: 70px;
+    line-height:1em;
+    margin-bottom:20px;
+}
+.content h3{
+    color:#fff;
+    font-size: 30px;
+    line-height:1em;
+    margin-bottom:10px;
+}
+.content p{
+    color:#fff;
+    font-size: 20px;
+    line-height:1em;
+    margin-bottom:10px;
+}
+
+#box::after{
+    background: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+.form
+{
+    margin: 20px auto;
+}
+.form input[type="email"]{
+    width:25%;
+    padding:10px;
+    font-size: 15px;
+    background: #fff;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px 0px 0px 25px;
+}
+.form input[type="submit"]{
+    width:8%;
+    padding:10px;
+    font-size: 15px;
+    background: #302f2f;
+    color:#ffffff;
+    border: 1px solid #000000;
+    border-radius: 0px 25px 25px 0px;
+    transition:1s;
+}
+
+.form input[type="submit"]:hover{
+    background: rgb(228,67,18);
+}
+
